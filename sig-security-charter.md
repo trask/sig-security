@@ -12,9 +12,7 @@ This includes:
 * improving the vulnerability management process
 * producing cross-cutting security documentation
 * serving as a security community touch point
-* managing the non-embargoed (public) vulnerability process
-* default repo configurations
-* defining the bug bounty
+* default repo configurations related to security
 
 As a process-oriented SIG, SIG Security does not directly own OpenTelemetry
 component code.
@@ -26,10 +24,9 @@ component code.
 Work with the OpenTelemetry Technical Committee (TC) to define the processes for
 fixing and disclosing vulnerabilities. For example:
 
-* The default level for OTel repo GitHub security configuration and tooling
+* The default OTel repo GitHub security configuration and tooling
 * When the private fix & release process is invoked
 * How vulnerabilities are rated
-* The scope of the bug bounty
 * Post-announcement follow-ups, such as additional fixes, mitigations,
   preventions or documentation after a vulnerability is made public
 * Distributor announcement policies, such as timelines, criteria for joining the
@@ -70,19 +67,39 @@ the affected SIG and help coordinate resolution, which can include:
 
 ### Out of scope
 
-SIG Security’s scope does not include:
+SIG Security's scope does not include:
 
 * Developing any new telemetry signals, SDKs, APIs etc.
 * Defining security semantic conventions
 * Security audit for other CNCF projects (e.g., etcd, CoreDNS, CRI-O,
-  containerd). These belong to the [CNCF’s SIG
+  containerd). These belong to the [CNCF's SIG
   Security](https://github.com/cncf/tag-security).
 * Any projects outside of the OpenTelemetry project and community repos
 * Vendor or distribution specific guidelines and vulnerability coverage
 * Recommendations or endorsements of specific commercial product vendors or
   cloud providers
-* Private vulnerability response (belongs to the relevant repo owners),
-  including:
-  * Embargoed vulnerability management
-  * Bug bounty submission triage and management
-  * Non-public vulnerability collection, triage, and disclosure
+* Direct vulnerability response, this belongs to the relevant repo owners.
+
+## Membership, Roles, and Responsibilities
+
+SIG Security is open to all OpenTelemetry contributors and community members
+interested in security. We welcome all levels of experience, from those who are
+new to security to those who are seasoned experts. We encourage participation
+from a diverse range of backgrounds and perspectives, as security is a
+multifaceted field that benefits from a variety of viewpoints.
+
+Currently, we have the
+[sig-security-maintainers](https://github.com/orgs/open-telemetry/teams/sig-security-maintainers)
+and
+[sig-security-approvers](https://github.com/orgs/open-telemetry/teams/sig-security-approvers)
+groups following the [OpenTelemetry community
+guides](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md).
+
+Due to the nature of the work, we hold a higher bar for maintainers because they
+have access to very sensitive information. In addition to the requirements
+described in the [general
+guides](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#becoming-a-maintainer),
+we require explicit discussion and agreement from the [Governance
+Committee](https://github.com/open-telemetry/community/blob/main/community-members.md#governance-committee)
+and the [Technical
+Committee](https://github.com/open-telemetry/community/blob/main/community-members.md#technical-committee).
